@@ -4,6 +4,7 @@ const inputEl = document.getElementById("input-el")
 const linksList = document.getElementById("links-list")
 const candidatesFromLocalStorage = JSON.parse(localStorage.getItem("myCandidates"))
 const saveLinkBtn = document.getElementById("save-link-btn")
+const resetBtn = document.getElementById("reset-btn")
 
 if (candidatesFromLocalStorage) {
     candidatesArray = candidatesFromLocalStorage
@@ -26,6 +27,13 @@ saveLinkBtn.addEventListener("click", function () {
         localStorage.setItem("myCandidates", JSON.stringify(candidatesArray))
         render()
     })
+})
+
+resetBtn.addEventListener("click", function () {
+    localStorage.clear
+    candidatesArray = []
+    render()
+
 })
 
 function render() {
