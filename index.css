@@ -1,0 +1,43 @@
+body {
+    min-width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-value {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid purple;
+}
+
+.all-buttons-styling {
+    color:  #CCC1FF;
+    background-color: #273549;
+    width: 200px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.candidates-display-area {
+    background-color: #273549;
+    height: 500px;
+}
+
+.display-area-heading {
+    color:  #CCC1FF;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
